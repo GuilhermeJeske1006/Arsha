@@ -125,7 +125,11 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  background: #0d6990;
+}
+canvas {
+  width: 100%;
+  height: 100%;
 }
 
 #header .logo {
@@ -396,7 +400,8 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: #37517e;
+  /* background: #080a3b; */
+  background-image: url('../img/endendedor-digital-background.jpg');
 }
 
 #hero .container {
@@ -908,7 +913,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(#080a3b, #080a3b), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
@@ -1853,4 +1858,201 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+
+.side-fixed {
+  position: fixed;
+  right: 0;
+  top: 200px;
+  z-index: 999
+}
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.01);
+}
+
+.side-fixed .fixed-instagram,
+.side-fixed .fixed-facebook,
+.side-fixed .fixed-whats {
+  display: table;
+  width: 55px;
+  height: 55px;
+  background: url(../img/icons-side-fixed.png) no-repeat;
+  position: absolute;
+  right: 0;
+  border-radius: 4px 0 0 4px;
+  transition: width .5s, transform .5s;
+  transition: width .5s, transform .5s, -webkit-transform .5s
+}
+
+.side-fixed .fixed-whats {
+  background-position: 10px -41px;
+  background-size: 35px;
+  top: 0px;
+  background-color: #4caf50
+}
+
+.side-fixed .fixed-facebook {
+  background-position: 10px -138px;
+  background-size: 35px;
+  top: 60px;
+  background-color: #4267b2
+}
+
+.side-fixed .fixed-instagram {
+  background-position: 9px -103px;
+  background-size: 38px;
+  top: 60px;
+  background-color: #d92e7f;
+}
+
+.side-fixed .small .fixed-infos {
+  display: none
+}
+
+.side-fixed .large,
+.side-fixed .large .fixed-infos {
+  display: table;
+  width: 300px
+}
+
+.side-fixed .fixed-infos h4 {
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0
+}
+
+.side-fixed .fixed-infos p,
+.side-fixed .fixed-infos p a {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0
+}
+
+.side-fixed .fixed-fone .fixed-infos {
+  padding: 10px 0 0 70px;
+  text-align: center
+}
+
+.side-fixed .fixed-fone .fixed-infos h4 {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0
+}
+
+.side-fixed .fixed-fone .fixed-infos p,
+.side-fixed .fixed-fone .fixed-infos p a,
+.side-fixed .fixed-messenger .fixed-infos p,
+.side-fixed .fixed-messenger .fixed-infos p a,
+.side-fixed .fixed-whats .fixed-infos p,
+.side-fixed .fixed-whats .fixed-infos p a {
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 0
+}
+
+.side-fixed .fixed-whats.large,
+.side-fixed .fixed-whats.large .fixed-infos {
+  width: 250px
+}
+
+.side-fixed .fixed-whats .fixed-infos {
+  padding: 9px 0 0 70px;
+  text-align: center
+}
+
+.side-fixed .fixed-whats .fixed-infos h4 {
+  line-height: 18px;
+  margin: 0
+}
+
+.side-fixed .fixed-whats .fixed-infos .wpp-locacao,
+.side-fixed .fixed-whats .fixed-infos .wpp-vendas {
+  float: left;
+  display: table;
+  margin: 0 10px
+}
+
+#top-bar,
+.side-fixed .fixed-whats .fixed-infos .wpp-locacao h4,
+.side-fixed .fixed-whats .fixed-infos .wpp-vendas h4,
+ul.top-bar-menu li a {
+  color: #fff
+}
+
+.side-fixed .fixed-instagram .fixed-infos,
+.side-fixed .fixed-facebook .fixed-infos {
+  padding: 10px 0 0 46px;
+  text-align: center
+}
+
+.side-fixed .fixed-instagram .fixed-infos h4,
+.side-fixed .fixed-facebook .fixed-infos h4 {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0
+}
+
+.side-fixed .fixed-facebook.large,
+.side-fixed .fixed-facebook.large .fixed-infos {
+  width: 250px
+}
+
+.side-fixed .fixed-facebook .btn.btn-facebook {
+  background: #ababab;
+  background-color: #efefef;
+  border: 1px solid #e1e1e1;
+  color: #000;
+  font-size: 14px;
+  padding: 0 15px;
+  margin: 6px 5px 0;
+  border-radius: 2px
+}
+
+.side-fixed .fixed-instagram.large,
+.side-fixed .fixed-instagram.large .fixed-infos {
+  width: 250px
+}
+
+.side-fixed .fixed-instagram .fixed-infos .instagram-botoes,
+.side-fixed .fixed-instagram .fixed-infos .instagram-infos {
+  float: left;
+  display: table
+}
+
+.side-fixed .fixed-instagram .fixed-infos .instagram-botoes {
+  margin-left: 15px
+}
+
+.side-fixed .fixed-instagram .fixed-infos .instagram-botoes .btn {
+  height: 30px;
+  line-height: 40px;
+  font-size: 14px;
+  padding: 0 15px;
+  margin: 6px 5px 0;
+  color: #006245;
+  border-radius: 2px;
+  border: 0
+}
+
+.side-fixed .fixed-instagram .fixed-infos .instagram-botoes .btn.btn-instagram,
+.side-fixed .fixed-instagram .fixed-infos .instagram-botoes .btn.btn-instagram:hover,
+.side-fixed .fixed-instagram .fixed-infos .instagram-botoes .btn.btn-locacao:hover {
+  background: #ababab;
+  background-color: #efefef;
+  border: 1px solid #e1e1e1;
+  color: #d0111b
+}
+
+.side-fixed .fixed-geo.large,
+.side-fixed .fixed-geo.large .fixed-infos {
+  width: 340px;
+  padding: 6px 0 0 30px;
+  text-align: center
 }
